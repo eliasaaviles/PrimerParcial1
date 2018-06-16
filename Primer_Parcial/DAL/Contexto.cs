@@ -7,5 +7,14 @@ using System.Text;
 
 namespace Primer_Parcial.DAL
 {
- 
+    class Contexto : DbContext
+    {
+        public DbSet<GrupoEstudiantes> grupoEstudiantes { get; set; }
+
+        public Contexto() : base("ConStr")
+        {
+
+        }
+
+    }
 }

@@ -55,7 +55,46 @@ namespace Primer_Parcial.UI.Consultas
         private void ConsultaBoton_Click(object sender, EventArgs e)
 
         {
-           
+            Expression<Func<GrupoEstudiantes, bool>> filtro = x => true;
+
+
+            int id;
+
+            switch (FiltroCombo.SelectedIndex)
+
+            {
+
+                case 0:
+                    if (CriterioBox.Text == " ")
+                    {
+
+                        errorProvider1.SetError(CriterioBox, "Por favor, llenar este campo");
+                        break;
+                    }
+                    else
+                    {
+                        id = Convert.ToInt32(CriterioBox.Text);
+
+                        filtro = x => x.GrupoID == id;
+                        break;
+                    }
+                    
+
+                case 1:
+
+                    filtro = x => x.Descripcion.Contains(CriterioBox.Text);
+
+                    break;
+                case 2:
+
+                    filtro = x => x.Fecha.Contains(DesdeFechaBox.Text);
+                    break;
+               }
+
+
+            DataView.DataSource = BLL.GrupoEstudiantesBLL.GetList(filtro);
+
+
 
 
 

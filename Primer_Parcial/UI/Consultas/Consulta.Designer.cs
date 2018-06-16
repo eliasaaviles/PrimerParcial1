@@ -38,14 +38,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.DesdeFechaBox = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.HastaFechaBox = new System.Windows.Forms.DateTimePicker();
             this.ConsultaBoton = new System.Windows.Forms.Button();
             this.DataView = new System.Windows.Forms.DataGridView();
             this.primerParcialDBDataSet1 = new Primer_Parcial.PrimerParcialDBDataSet();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.primerParcialDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +68,8 @@
             this.FiltroCombo.FormattingEnabled = true;
             this.FiltroCombo.Items.AddRange(new object[] {
             "ID",
-            "Descripcion "});
+            "Descripcion ",
+            "Fecha"});
             this.FiltroCombo.Location = new System.Drawing.Point(64, 26);
             this.FiltroCombo.Name = "FiltroCombo";
             this.FiltroCombo.Size = new System.Drawing.Size(121, 21);
@@ -138,13 +141,13 @@
             this.DesdeFechaBox.Size = new System.Drawing.Size(106, 20);
             this.DesdeFechaBox.TabIndex = 7;
             // 
-            // dateTimePicker1
+            // HastaFechaBox
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(679, 90);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(106, 20);
-            this.dateTimePicker1.TabIndex = 8;
+            this.HastaFechaBox.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.HastaFechaBox.Location = new System.Drawing.Point(679, 90);
+            this.HastaFechaBox.Name = "HastaFechaBox";
+            this.HastaFechaBox.Size = new System.Drawing.Size(106, 20);
+            this.HastaFechaBox.TabIndex = 8;
             // 
             // ConsultaBoton
             // 
@@ -179,6 +182,10 @@
             // 
             this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged_1);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Consulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,7 +195,7 @@
             this.ClientSize = new System.Drawing.Size(797, 301);
             this.Controls.Add(this.DataView);
             this.Controls.Add(this.ConsultaBoton);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.HastaFechaBox);
             this.Controls.Add(this.DesdeFechaBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -205,6 +212,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.primerParcialDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,10 +228,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker DesdeFechaBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker HastaFechaBox;
         private System.Windows.Forms.Button ConsultaBoton;
         private System.Windows.Forms.DataGridView DataView;
         private PrimerParcialDBDataSet primerParcialDBDataSet1;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

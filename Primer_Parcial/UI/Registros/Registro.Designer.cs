@@ -93,9 +93,9 @@
             // BuscarBoton
             // 
             this.BuscarBoton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarBoton.Image")));
-            this.BuscarBoton.Location = new System.Drawing.Point(216, 225);
+            this.BuscarBoton.Location = new System.Drawing.Point(261, 12);
             this.BuscarBoton.Name = "BuscarBoton";
-            this.BuscarBoton.Size = new System.Drawing.Size(100, 32);
+            this.BuscarBoton.Size = new System.Drawing.Size(81, 52);
             this.BuscarBoton.TabIndex = 5;
             this.BuscarBoton.Text = "Buscar";
             this.BuscarBoton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -158,6 +158,7 @@
             this.CantidadBox.Name = "CantidadBox";
             this.CantidadBox.Size = new System.Drawing.Size(38, 20);
             this.CantidadBox.TabIndex = 12;
+            this.CantidadBox.Text = "\r\n";
             this.CantidadBox.TextChanged += new System.EventHandler(this.CantidadBox_TextChanged);
             // 
             // GrupoBox
@@ -183,7 +184,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(161, 18);
+            this.label6.Location = new System.Drawing.Point(49, 18);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 18);
             this.label6.TabIndex = 16;
@@ -192,7 +193,7 @@
             // 
             // IdNum
             // 
-            this.IdNum.Location = new System.Drawing.Point(268, 16);
+            this.IdNum.Location = new System.Drawing.Point(142, 20);
             this.IdNum.Name = "IdNum";
             this.IdNum.Size = new System.Drawing.Size(48, 20);
             this.IdNum.TabIndex = 17;
