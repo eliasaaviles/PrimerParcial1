@@ -54,7 +54,7 @@
             // NuevoBoton
             // 
             this.NuevoBoton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoBoton.Image")));
-            this.NuevoBoton.Location = new System.Drawing.Point(436, 81);
+            this.NuevoBoton.Location = new System.Drawing.Point(435, 68);
             this.NuevoBoton.Name = "NuevoBoton";
             this.NuevoBoton.Size = new System.Drawing.Size(95, 52);
             this.NuevoBoton.TabIndex = 2;
@@ -67,7 +67,7 @@
             // GuardarBoton
             // 
             this.GuardarBoton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarBoton.Image")));
-            this.GuardarBoton.Location = new System.Drawing.Point(436, 157);
+            this.GuardarBoton.Location = new System.Drawing.Point(435, 140);
             this.GuardarBoton.Name = "GuardarBoton";
             this.GuardarBoton.Size = new System.Drawing.Size(94, 52);
             this.GuardarBoton.TabIndex = 3;
@@ -80,7 +80,7 @@
             // EliminarBoton
             // 
             this.EliminarBoton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarBoton.Image")));
-            this.EliminarBoton.Location = new System.Drawing.Point(435, 242);
+            this.EliminarBoton.Location = new System.Drawing.Point(436, 205);
             this.EliminarBoton.Name = "EliminarBoton";
             this.EliminarBoton.Size = new System.Drawing.Size(96, 52);
             this.EliminarBoton.TabIndex = 4;
